@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    /* background-color: #6de2e2; */
+    padding-top: 0.1px;
+    position:relative;
+}
+#nav{
+    height: 10vh;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 30px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav h2{
+    /* background-color: yellow; */
+    height: 100%;
+    width:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #000;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+#nav h1{
+    /* background-color: yellow; */
+    height: 100%;
+    width:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    letter-spacing: -3.8px;
+    
+}
+#nav h2:nth-last-child(1){
+    width: 10%;
+}
+#nav h2:nth-last-child(2){
+    width: 29%;
+}
+#center{
+    height: 90%;
+    width: 100%;
+    /* background-color: red; */
+    padding: 4vw;
+    position: relative;
+}
+#content{
+    height: 100%;
+    width: 100%;
+    background-color: yellow;
+    position: relative;
+}
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#overlay{
+    height: 50%;
+    width: 100%;
+    position:absolute;
+    bottom: 0;
+    padding: 3vw;
+    color: #fff;
+}
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.6vh;
+}
+#over1 h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3.6vw;
+}
+#over1 h2{
+    font-size: 1vw;
+    padding: 2vw 2.4vw;
+    /* background-color: blue; */
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #fff;
+    padding: 1vw 0;
+}
+#over2 h4{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+#over2 img{
+    height: 4vw;
+}
+#scroll{
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    padding: 1vw;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+#container{
+    height: 100%;
+    width: 110%;
+    /* background-color: blue; */
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll img{
+    height: 100%;
+    width: 13%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 30% 30%;
+    margin: 2vw;
+}
+@keyframes anime{
+    from{
+        transform: translateX(0)
+    }
+    to{
+        transform: translateX(-100%)
+    }
+}
+#alphabet{
+   height: 12vh;
+   width: 100%;
+   /* background-color: red; */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 1vw;
+   border-top: 2px solid #000;
+   border-bottom: 2px solid #000;
+}
+#alphabet h5{
+    font-size: 1.7vw;
+    border-bottom: 1.8px solid #000;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 2.8px;
+    margin-right: 0.5vw;
+}
+#alphabet h6{
+    font-size: 1vw;
+    font-weight: 400;
+    font-style: italic;
+    padding: 0.6vw 0.8vw ;
+    /* background-color: yellow; */
+    border: 1px solid #00000000;
+    border-radius: 50%;
+    cursor:pointer;
+    transform: all ease 0.2;
+}
+#alphabet h6:hover{
+    border: 1px solid #000000;
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 5vw;
+}
+#page2-part1{
+    height: 100%;
+    width: 50%;
+    /* background-color: blue; */
+    background-image: url(https://plus.unsplash.com/premium_photo-1669834759290-7ecb3793be45?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE3fHxtb2RlbCUyMGF0JTIwYmVhY2h8ZW58MHx8MHx8fDA%3D);
+    object-fit: cover; 
+    background-size: cover;
+}
+#page2-part2{
+    height: 100%;
+    width: 45%;
+}
+#page2-part2 img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover ;
+    background-size: cover;
+    margin-bottom: 1vw;
+}
+#text{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+#text1{
+    font-size: 1.4vw;
+    margin-right: 6vw;
+}
